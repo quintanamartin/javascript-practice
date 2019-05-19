@@ -38,3 +38,36 @@ function celsiusToFahreinheit(){
    return fahrenheitDegrees;
 }
 console.log(celsiusToFahreinheit());
+
+/*
+Following day
+Write a program that accepts a day name from the user,
+then shows the name of the following day.Incorrect inputs must be taken into account.
+*/
+const followingDay = prompt('Pick the current day of the week').toLowerCase();
+
+switch(followingDay){
+   case "monday":
+      console.log('The following day is Tuesday');
+      break;
+   case "tuesday":
+      console.log('The following day is Wednesday');
+      break;
+   case "wednesday":
+      console.log('The following day is Thursday');
+      break;
+   case "thursday":
+      console.log('The following day is Friday');
+      break;
+   case "friday":
+      console.log('The following day is Saturday');
+      break;
+   case "saturday":
+      console.log('The following day is Sunday');
+      break;
+   case "sunday":
+      console.log('The following day is Monday');
+      break;
+   default:
+      console.log('This is nos a valid day of the week');
+}
