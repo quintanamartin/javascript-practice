@@ -71,3 +71,16 @@ switch(followingDay){
    default:
       console.log('This is nos a valid day of the week');
 }
+
+/*
+Carousel
+Write a program that launches a carousel for 10 turns, showing the turn number each time.
+
+When it's done, improve it so that the number of turns is given by the user.
+*/
+function carousel(){
+carouselTurns = Number(prompt('Pick the carousel turns'));
+   for(let i = 0; i <= carouselTurns; i++){
+      console.log(i);
+   }
+}
